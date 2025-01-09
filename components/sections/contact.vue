@@ -14,7 +14,7 @@
     </div>
 </template>
 <script setup lang="ts">
-import gsap from 'gsap';
+import gsap from '~/plugins/gsap';
 
 onMounted(() => {
     gsap.fromTo('#contact',

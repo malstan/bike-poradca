@@ -2,7 +2,7 @@
     <a ref="btn" href="tel:0951355464" class="inline-block text-lg xs:text-xl md:text-2xl bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-full duration-200 ease-in-out">Zavolať teraz</a>
 </template>
 <script setup lang="ts">
-import gsap from 'gsap';
+import gsap from '~/plugins/gsap';
 
 const btn = ref(null);
 

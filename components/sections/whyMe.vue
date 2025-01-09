@@ -15,10 +15,7 @@ import independant from '~/assets/icons/independant.png'
 import personalCare from '~/assets/icons/personal-care.png'
 import free from '~/assets/icons/no-money.png'
 
-import gsap from 'gsap';
-import ScrollTrigger from 'gsap/ScrollTrigger';
-
-gsap.registerPlugin(ScrollTrigger);
+import gsap from '~/plugins/gsap';
 
 const iconRefs = ref([]);
 const titleRefs = ref([]);

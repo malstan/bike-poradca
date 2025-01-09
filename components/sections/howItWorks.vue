@@ -110,9 +110,7 @@
 </template>
 
 <script setup lang="ts">
-import gsap from 'gsap';
-import ScrollTrigger from 'gsap/ScrollTrigger';
-gsap.registerPlugin(ScrollTrigger);
+import gsap from '~/plugins/gsap';
 
 const ball1 = ref(null);
 const ball2 = ref(null);
