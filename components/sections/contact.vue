@@ -1,6 +1,6 @@
 <template>
     <div class="contaner mx-auto py-20 px-4" id="contact">
-        <h2 class="text-center text-2xl md:text-5xl mb-10 px-10 text-green-500 font-bold">Kontaktujte ma e-mailom</h2>
+        <h2 class="text-center text-2xl xs:text-3xl lg:text-4xl md:text-5xl mb-10 px-10  font-bold">Kontaktujte ma <span class="whitespace-nowrap">e-mailom</span></h2>
         <form class="max-w-lg mx-auto">
             <div class="flex flex-col xs:flex-row gap-4 mb-4">
                 <input type="text" id="name" name="name" placeholder="Meno" class="flex-1" />

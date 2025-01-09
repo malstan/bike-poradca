@@ -1,6 +1,19 @@
 <template>
     <div class="bg-green-500">
         <div class="container mx-auto py-10 px-4">
+
+        <h2 class="text-3xl xs:text-4xl lg:text-5xl text-white font-bold my-10 text-center w-full inline-block">
+            Cesta k 
+            <span class="relative inline-block">
+            <svg class="absolute top-0 left-0 w-full h-full fill-none stroke-orange-500" id="border-svg-process" style="stroke-width: 6; stroke-dasharray: 520; stroke-dashoffset: 500;" viewBox="0 0 200 60" preserveAspectRatio="none">
+                <rect x="0" y="0" width="100%" height="100%" />
+            </svg>
+            <span class="relative block p-3">
+                vysnenému
+            </span>
+            </span>
+            bicyklu.
+        </h2>
             
             <div class="relative process-section">
                 <!-- first -->
@@ -36,7 +49,7 @@
                     <div class="w-full lg:w-2/5 justify-items-end opacity-0 ml-10 xs:ml-0" id="step2">
                         <div class="shadow-lg rounded-lg p-4 xs:p-10 max-w-96 bg-green-600">
                             <span class="block mb-3 text-md font-bold text-orange-500">02</span>
-                            <p class="text-xl xs:text-2xl text-white">Poradím Vám, ktorý bicykel je pre Vás najlepší.</p>
+                            <p class="text-xl xs:text-2xl text-white">Povedzte mi o vašom budúcom bicykli.</p>
                         </div>
                     </div>
 
@@ -75,7 +88,7 @@
                     <div class="w-full lg:w-2/5 opacity-0 mr-10 xs:mr-0" id="step3">
                         <div class="shadow-lg rounded-lg p-4 xs:p-10 max-w-96 bg-green-600">
                             <span class="block mb-3 text-md font-bold text-orange-500">03</span>
-                            <p class="text-xl xs:text-2xl text-white">Odporúčim Vám najbližšiu predajňu.</p>
+                            <p class="text-xl xs:text-2xl text-white">Poradím Vám, ktorý bicykel je pre Vás najlepší.</p>
                         </div>
                     </div>
                 </div>
@@ -125,6 +138,19 @@ const line3 = ref(null);
 const line32 = ref(null);    
 
 onMounted(() => {
+
+    gsap.to('#border-svg-process rect', {
+        strokeDashoffset: 0,
+        duration: 2,
+        ease: 'power2.out',
+        scrollTrigger: {
+            trigger: '#border-svg-process rect',
+            start: 'top 80%',
+            end: 'top 50%',
+            scrub: false,
+            markers: false
+        }
+    });
 
     gsap.to(ball1.value, 
         { 

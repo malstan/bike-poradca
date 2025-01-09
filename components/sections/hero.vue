@@ -3,7 +3,7 @@
         <div class="absolute inset-0 bg-black opacity-50"></div>
         <div class="relative container mx-auto py-10">
             <h1 class="text-3xl xs:text-4xl md:text-6xl lg:text-7xl text-white font-bold mb-4 md:mb-8 leading-tight" id="title">Váš osobný poradca<br>pri kúpe bicykla!</h1>
-            <h2 class="textlg xs:text-xl md:text-2xl lg:text-3xl text-green-500 font-bold mb-4 lg:mb-10 min-h-9" id="subTitle"></h2>
+            <h2 class="text-lg xs:text-xl md:text-2xl lg:text-3xl text-green-500 font-bold mb-4 lg:mb-10 min-h-14 xs:min-h-9" id="subTitle"></h2>
 
             <UiCallNow id="heroBtn"/>
         </div>
