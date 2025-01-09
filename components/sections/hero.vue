@@ -13,9 +13,9 @@
 import gsap from 'gsap';
 import TextPlugin from 'gsap/TextPlugin';
 
-gsap.registerPlugin(TextPlugin)
-
 onMounted(() => {
+    gsap.registerPlugin(TextPlugin)
+    
     const tl = gsap.timeline();
 
     tl.fromTo('#title', 
