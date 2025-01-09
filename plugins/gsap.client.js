@@ -1,6 +1,5 @@
 import gsap from 'gsap';
-import ScrollTrigger from 'gsap/ScrollTrigger';
-import TextPlugin from 'gsap/TextPlugin';
+import { ScrollTrigger, TextPlugin } from 'gsap/all';
 
 // Registrovanie pluginov
 gsap.registerPlugin(ScrollTrigger, TextPlugin);
