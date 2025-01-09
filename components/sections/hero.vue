@@ -10,12 +10,10 @@
     </div>
 </template>
 <script setup lang="ts">
-import gsap from 'gsap';
-import TextPlugin from 'gsap/TextPlugin';
+import gsap from '~/plugins/gsap';
 
 onMounted(() => {
-    gsap.registerPlugin(TextPlugin)
-    
+
     const tl = gsap.timeline();
 
     tl.fromTo('#title', 

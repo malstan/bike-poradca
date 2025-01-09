@@ -4,6 +4,6 @@ export default defineNuxtConfig({
   ssr: true,
   modules: ['@nuxtjs/tailwindcss'],
   plugins: [
-    { src: '~/plugins/gsap.client.js', mode: 'client' }
+    { src: '~/plugins/gsap.js', ssr: false }
   ]
 })
