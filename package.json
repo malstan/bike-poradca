@@ -4,7 +4,6 @@
   "type": "module",
   "scripts": {
     "build": "nuxt build",
-    "start": "nuxt start",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
@@ -19,8 +18,5 @@
   },
   "devDependencies": {
     "tailwindcss": "^3.4.17"
-  },
-  "engines": {
-    "node": "22.13.0"
   }
 }

@@ -16,9 +16,6 @@ import personalCare from '~/assets/icons/personal-care.png'
 import free from '~/assets/icons/no-money.png'
 
 import gsap from 'gsap';
-import ScrollTrigger from 'gsap/ScrollTrigger';
-
-gsap.registerPlugin(ScrollTrigger);
 
 const iconRefs = ref([]);
 const titleRefs = ref([]);
