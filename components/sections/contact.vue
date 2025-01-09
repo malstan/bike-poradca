@@ -23,7 +23,14 @@ onMounted(() => {
             opacity: 1,
             y: 0,
             duration: 1.5,
-            ease: 'power2.out'
+            ease: 'power2.out',
+            scrollTrigger: {
+                trigger: '#contact',
+                start: 'top 80%',
+                end: 'top 50%',
+                scrub: false,
+                markers: false
+            }
         }
     );
 })
