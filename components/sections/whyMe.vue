@@ -1,20 +1,19 @@
 <template>
   <div class="container mx-auto px-4 py-16 my-20">
 
-    <h2 class="text-3xl xs:text-4xl lg:text-5xl font-bold mb-10 sm:mb-28 text-center w-full inline-block">
-      Čo
-        <span class="relative inline-block">
-          <svg class="absolute top-0 left-0 w-full h-full fill-none stroke-orange-500" id="border-svg-benefits" style="stroke-width: 6; stroke-dasharray: 520; stroke-dashoffset: 500;" viewBox="0 0 200 60" preserveAspectRatio="none">
-              <rect x="0" y="0" width="100%" height="100%" />
-          </svg>
-          <span class="relative block p-3">
-              dostanete
-          </span>
-        </span>
-      ?
-    </h2>
+    <UiAnimatedTitle>
+        <template #before>
+          Čo
+        </template>
+        <template #inBorder>
+            dostanete
+        </template>
+        <template #after>
+            ?
+        </template>
+    </UiAnimatedTitle>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10">
+    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-20 md:gap-10">
         <div v-for="benefit in benefits" :key="benefit.title" class="flex flex-col items-center gap-2">
             <img ref="iconRefs" :src="benefit.icon" alt="check" class="" />
             <h3 ref="titleRefs" class="text-2xl font-semibold mt-1 text-center">{{ benefit.title }}</h3>
@@ -36,19 +35,6 @@ const titleRefs = ref([]);
 const descRefs = ref([]);
 
 onMounted(() => {
-  gsap.to('#border-svg-benefits rect', {
-      strokeDashoffset: 0,
-      duration: 2,
-      ease: 'power2.out',
-      scrollTrigger: {
-          trigger: '#border-svg-benefits rect',
-          start: 'top 80%',
-          end: 'top 50%',
-          scrub: false,
-          markers: false
-      }
-  });
-
   iconRefs.value.forEach((icon, index) => {
     gsap.fromTo(icon, 
       { y: -20, opacity: 0 },

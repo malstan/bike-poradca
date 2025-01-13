@@ -2,32 +2,31 @@
     <div class="bg-green-500">
         <div class="container mx-auto py-10 px-4">
 
-        <h2 class="text-3xl xs:text-4xl lg:text-5xl text-white font-bold my-10 text-center w-full inline-block">
-            Cesta k 
-            <span class="relative inline-block">
-            <svg class="absolute top-0 left-0 w-full h-full fill-none stroke-orange-500" id="border-svg-process" style="stroke-width: 6; stroke-dasharray: 520; stroke-dashoffset: 500;" viewBox="0 0 200 60" preserveAspectRatio="none">
-                <rect x="0" y="0" width="100%" height="100%" />
-            </svg>
-            <span class="relative block p-3">
-                vysnenému
-            </span>
-            </span>
-            bicyklu.
-        </h2>
-            
+            <UiAnimatedTitle class="text-white">
+                <template #before>
+                    Cesta k 
+                </template>
+                <template #inBorder>
+                    vysnenému
+                </template>
+                <template #after>
+                    bicyklu.
+                </template>
+            </UiAnimatedTitle>
+        
             <div class="relative process-section">
                 <!-- first -->
                 <div class="flex items-center justify-between min-h-52 gap-4 relative">
                     <div class="w-2/5 hidden lg:block">
-                        <div class=""></div>
+                        <div></div>
                     </div>
 
-                    <div class="">
+                    <div>
                         <div class="absolute top-1/2 flex items-center justify-center h-full w-6">
                             <div class="w-2 absolute top-0 h-full bg-gray-300"></div>
-                            <div ref="line1" class="w-2 absolute top-0 h-0 transition-all duration-500 ease-in-out"></div>
+                            <div ref="line1" class="w-2 absolute top-0 h-0 bg-orange-500 duration-300"></div>
                         </div>
-                        <div ref="ball1" class="z-10 size-6 bg-gray-300 rounded-full transition-all duration-500 ease-in-out relative"></div>
+                        <div ref="ball1" class="z-10 size-6 bg-gray-300 rounded-full relative"></div>
                     </div>
 
                     <div class="w-full lg:w-2/5 opacity-0 mr-10 xs:mr-0" id="step1">
@@ -43,7 +42,7 @@
 
                     <div class="lg:hidden absolute top-[calc(50%-4px)] flex items-center justify-center h-6 ml-[8px] w-[calc(100%-20px)]">
                         <div class="h-2 absolute top-0 w-full bg-gray-300"></div>
-                        <div ref="line12" class="h-2 absolute left-0 top-0 w-0 transition-all duration-500 ease-in-out"></div>
+                        <div ref="line12" class="h-2 absolute left-0 top-0 w-0 bg-orange-500 duration-300"></div>
                     </div>
                     
                     <div class="w-full lg:w-2/5 justify-items-end opacity-0 ml-10 xs:ml-0" id="step2">
@@ -53,12 +52,12 @@
                         </div>
                     </div>
 
-                    <div class="">
+                    <div>
                         <div class="absolute top-1/2 flex items-center justify-center h-full w-6">
                             <div class="w-2 absolute top-0 h-full bg-gray-300"></div>
-                            <div ref="line2" class="w-2 absolute top-0 h-0 transition-all duration-500 ease-in-out"></div>
+                            <div ref="line2" class="w-2 absolute top-0 h-0 bg-orange-500 duration-300"></div>
                         </div>
-                        <div ref="ball2" class="z-10 size-6 bg-gray-300 rounded-full transition-all duration-500 ease-in-out relative"></div>
+                        <div ref="ball2" class="z-10 size-6 bg-gray-300 rounded-full relative"></div>
                     </div>
 
                     <div class="w-2/5 hidden lg:block">
@@ -69,20 +68,19 @@
                 <!-- third -->
                 <div class="flex items-center justify-between min-h-52 gap-4 relative">
                     <div class="w-2/5 hidden lg:block">
-                       
                     </div>
 
                     <div class="lg:hidden absolute top-[calc(50%-4px)] flex items-center justify-center h-6  w-[calc(100%-20px)]">
                         <div class="h-2 absolute top-0 -right-3 w-full bg-gray-300"></div>
-                        <div ref="line22" class="h-2 absolute -right-3 top-0 w-0 transition-all duration-500 ease-in-out"></div>
+                        <div ref="line22" class="h-2 absolute -right-3 top-0 w-0 bg-orange-500 duration-300"></div>
                     </div>
 
-                    <div class="">
+                    <div>
                         <div class="absolute top-1/2 flex items-center justify-center h-full w-6">
                             <div class="w-2 absolute top-0 h-full bg-gray-300"></div>
-                            <div ref="line3" class="w-2 absolute top-0 h-0 transition-all duration-500 ease-in-out"></div>
+                            <div ref="line3" class="w-2 absolute top-0 h-0 bg-orange-500 duration-300"></div>
                         </div>
-                        <div ref="ball3" class="z-10 size-6 bg-gray-300 rounded-full transition-all duration-500 ease-in-out relative"></div>
+                        <div ref="ball3" class="z-10 size-6 bg-gray-300 rounded-full relative"></div>
                     </div>
 
                     <div class="w-full lg:w-2/5 opacity-0 mr-10 xs:mr-0" id="step3">
@@ -98,7 +96,7 @@
                     
                      <div class="lg:hidden absolute top-[calc(50%-4px)] flex items-center justify-center h-6 ml-[8px] w-[calc(100%-20px)]">
                         <div class="h-2 absolute top-0 w-full bg-gray-300"></div>
-                        <div ref="line32" class="h-2 absolute left-0 top-0 w-0 transition-all duration-500 ease-in-out"></div>
+                        <div ref="line32" class="h-2 absolute left-0 top-0 w-0 bg-orange-500 duration-300"></div>
                     </div>
 
                     <div class="w-full lg:w-2/5 justify-items-end opacity-0 ml-10 xs:ml-0" id="step4">
@@ -108,12 +106,11 @@
                         </div>
                     </div>
 
-                    <div class="">
-                        <div ref="ball4" class="z-10 size-6 bg-gray-300 rounded-full transition-all duration-500 ease-in-out relative"></div>
+                    <div>
+                        <div ref="ball4" class="z-10 size-6 bg-gray-300 rounded-full relative"></div>
                     </div>
 
                     <div class="w-2/5 hidden lg:block">
-                       
                     </div>
                 </div>
 
@@ -125,33 +122,19 @@
 <script setup lang="ts">
 import gsap from '~/plugins/gsap';
 
-const ball1 = ref(null);
-const ball2 = ref(null);
-const ball3 = ref(null);
-const ball4 = ref(null);
+const ball1 = ref<null | HTMLElement>(null);
+const ball2 = ref<null | HTMLElement>(null);
+const ball3 = ref<null | HTMLElement>(null);
+const ball4 = ref<null | HTMLElement>(null);
 
-const line1 = ref(null);
-const line12 = ref(null);
-const line2 = ref(null);
-const line22 = ref(null);
-const line3 = ref(null);    
-const line32 = ref(null);    
+const line1 = ref<null | HTMLElement>(null);
+const line12 = ref<null | HTMLElement>(null);
+const line2 = ref<null | HTMLElement>(null);
+const line22 = ref<null | HTMLElement>(null);
+const line3 = ref<null | HTMLElement>(null);    
+const line32 = ref<null | HTMLElement>(null);    
 
 onMounted(() => {
-
-    gsap.to('#border-svg-process rect', {
-        strokeDashoffset: 0,
-        duration: 2,
-        ease: 'power2.out',
-        scrollTrigger: {
-            trigger: '#border-svg-process rect',
-            start: 'top 80%',
-            end: 'top 50%',
-            scrub: false,
-            markers: false
-        }
-    });
-
     gsap.to(ball1.value, 
         { 
             duration: 1, 
@@ -162,67 +145,90 @@ onMounted(() => {
                 end: 'bottom 75%',
                 once: true,
                 onEnter: () => {
-                    ball1.value.classList.add('bg-orange-500');
+                    ball1.value?.classList.add('bg-orange-500');
                     gsap.fromTo('#step1', { x: 25, scale: 0.9, opacity: 0 }, { x: 0, scale: 1, opacity: 1, duration: 1, ease: 'power2.out' });
                 }
             }
         }
     );
 
-    gsap.to(line1.value, 
+    gsap.fromTo(line1.value, 
+        { height: 0 },
         { 
-            duration: 1, 
+            height: '100%',
+            duration: 0.3, 
             ease: 'power2.out', 
             scrollTrigger: {
                 trigger: line1.value,
                 start: 'top 50%',
                 end: 'bottom 50%',
-                onEnter: () => line1.value.classList.add('bg-orange-500', 'h-full'),
             },
             onComplete: () => {
-                line12.value.classList.add('bg-orange-500', 'w-full'),
-                ball2.value.classList.add('bg-orange-500');
-                gsap.fromTo('#step2', { x: -25, scale: 0.9, opacity: 0 }, { x: 0, scale: 1, opacity: 1, duration: 1, ease: 'power2.out' });
+                gsap.fromTo(line12.value, 
+                    { width: 0 },
+                    { width: '100%', delay: 0.3, duration: 0.5, ease: 'power2.out',
+                        onComplete: () =>  ball2.value?.classList.add('bg-orange-500')
+                    }
+                );
+                gsap.fromTo('#step2', 
+                    { x: -25, scale: 0.9, opacity: 0 }, 
+                    { x: 0, scale: 1, opacity: 1, delay: 0.7, duration: 0.4, ease: 'power2.out' }
+                );
             }
         }
     );
 
-    gsap.to(line2.value, 
+
+     gsap.fromTo(line2.value, 
+        { height: 0 },
         { 
-            duration: 1, 
+            height: '100%',
+            duration: 0.3, 
             ease: 'power2.out', 
             scrollTrigger: {
                 trigger: line2.value,
                 start: 'top 50%',
-                end: 'bottom 50%',      
-                onEnter: () => line2.value.classList.add('bg-orange-500', 'h-full'),
-                },
+                end: 'bottom 50%',
+            },
             onComplete: () => {
-                line22.value.classList.add('bg-orange-500', 'w-full'),
-                ball3.value.classList.add('bg-orange-500');
-                gsap.fromTo('#step3', { x: 25, scale: 0.9, opacity: 0 }, { x: 0, scale: 1, opacity: 1, duration: 1, ease: 'power2.out' });
+                gsap.fromTo(line22.value, 
+                    { width: 0 },
+                    { width: '100%', delay: 0.3, duration: 0.5, ease: 'power2.out',
+                        onComplete: () =>  ball3.value?.classList.add('bg-orange-500')
+                    }
+                );
+                gsap.fromTo('#step3', 
+                    { x: -25, scale: 0.9, opacity: 0 }, 
+                    { x: 0, scale: 1, opacity: 1, delay: 0.7, duration: 0.4, ease: 'power2.out' }
+                );
             }
         }
     );
 
-    gsap.to(line3.value, 
+     gsap.fromTo(line3.value, 
+        { height: 0 },
         { 
-            duration: 1, 
+            height: '100%',
+            duration: 0.3, 
             ease: 'power2.out', 
             scrollTrigger: {
                 trigger: line3.value,
                 start: 'top 50%',
-                end: 'bottom 50%',               
-                onEnter: () => line3.value.classList.add('bg-orange-500', 'h-full'),
+                end: 'bottom 50%',
             },
             onComplete: () => {
-                line32.value.classList.add('bg-orange-500', 'w-full'),
-                ball4.value.classList.add('bg-orange-500');
-                gsap.fromTo('#step4', { x: -25, scale: 0.9, opacity: 0 }, { x: 0, scale: 1, opacity: 1, duration: 1, ease: 'power2.out' });
+                gsap.fromTo(line32.value, 
+                    { width: 0 },
+                    { width: '100%', delay: 0.3, duration: 0.5, ease: 'power2.out',
+                        onComplete: () =>  ball4.value?.classList.add('bg-orange-500')
+                    }
+                );
+                gsap.fromTo('#step4', 
+                    { x: -25, scale: 0.9, opacity: 0 }, 
+                    { x: 0, scale: 1, opacity: 1, delay: 0.7, duration: 0.4, ease: 'power2.out' }
+                );
             }
-                
         }
     );
-
 });
 </script>
