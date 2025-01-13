@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto px-4 py-16 my-20">
+  <div class="container mx-auto px-4 py-24">
 
     <UiAnimatedTitle>
         <template #before>

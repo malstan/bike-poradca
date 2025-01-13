@@ -1,6 +1,6 @@
 <template>
     <div class="bg-green-500">
-        <div class="container mx-auto py-10 px-4">
+        <div class="container mx-auto py-24 px-4">
 
             <UiAnimatedTitle class="text-white">
                 <template #before>
@@ -30,7 +30,7 @@
                     </div>
 
                     <div class="w-full lg:w-2/5 opacity-0 mr-10 xs:mr-0" id="step1">
-                        <div class="shadow-lg rounded-lg p-4 xs:p-10 max-w-96 bg-green-600 ">
+                        <div class="shadow-lg rounded-lg p-4 xs:p-8 max-w-96 bg-green-600 ">
                             <span class="block mb-3 text-md font-bold text-orange-500">01</span>
                             <p class="text-xl xs:text-2xl text-white">Zavolajte mi.</p>
                         </div>
@@ -46,7 +46,7 @@
                     </div>
                     
                     <div class="w-full lg:w-2/5 justify-items-end opacity-0 ml-10 xs:ml-0" id="step2">
-                        <div class="shadow-lg rounded-lg p-4 xs:p-10 max-w-96 bg-green-600">
+                        <div class="shadow-lg rounded-lg p-4 xs:p-8 max-w-96 bg-green-600">
                             <span class="block mb-3 text-md font-bold text-orange-500">02</span>
                             <p class="text-xl xs:text-2xl text-white">Povedzte mi o vašom budúcom bicykli.</p>
                         </div>
@@ -84,7 +84,7 @@
                     </div>
 
                     <div class="w-full lg:w-2/5 opacity-0 mr-10 xs:mr-0" id="step3">
-                        <div class="shadow-lg rounded-lg p-4 xs:p-10 max-w-96 bg-green-600">
+                        <div class="shadow-lg rounded-lg p-4 xs:p-8 max-w-96 bg-green-600">
                             <span class="block mb-3 text-md font-bold text-orange-500">03</span>
                             <p class="text-xl xs:text-2xl text-white">Poradím Vám, ktorý bicykel je pre Vás najlepší.</p>
                         </div>
@@ -100,7 +100,7 @@
                     </div>
 
                     <div class="w-full lg:w-2/5 justify-items-end opacity-0 ml-10 xs:ml-0" id="step4">
-                        <div class="shadow-lg rounded-lg p-4 xs:p-10 max-w-96 bg-green-600">
+                        <div class="shadow-lg rounded-lg p-4 xs:p-8 max-w-96 bg-green-600">
                             <span class="block mb-3 text-md font-bold text-orange-500">04</span>
                             <p class="text-xl xs:text-2xl text-white">Brázdite krajinou na vašom vysnívanom bicykli.</p>
                         </div>

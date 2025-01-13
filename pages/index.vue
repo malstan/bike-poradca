@@ -10,8 +10,8 @@
 
     <SectionsHowItWorks />
     
-    <SectionsPartners />
     <SectionsReviews />
+
     <SectionsContact />
   </div>
 </template>
