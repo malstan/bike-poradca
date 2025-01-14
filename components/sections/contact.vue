@@ -7,9 +7,9 @@
                 <input type="email" id="email" name="email" placeholder="E-mail" class="flex-1" />
             </div>
 
-            <textarea id="message" name="message" placeholder="Správa" class="block w-full min-h-16"></textarea>
+            <textarea id="message" name="message" placeholder="Správa" class="block w-full min-h-16 h-auto"></textarea>
 
-            <UiButton type="submit" class="mt-4 w-full text-2xl">Odoslať</UiButton>
+            <UiButton type="submit" class="mt-4 w-full text-lg sm:text-xl ">Odoslať</UiButton>
         </form>
     </div>
 </template>
@@ -39,10 +39,10 @@ onMounted(() => {
 
 <style scoped>
     input, textarea {
-        @apply px-3 py-2 bg-white text-lg border shadow-sm border-gray-300 placeholder-gray-400 focus:outline-none focus:border-orange-500 focus:ring-orange-500 block w-full rounded-md focus:ring-1
+        @apply px-3 py-2 bg-white text-base border shadow-sm border-gray-300 placeholder-gray-400 focus:outline-none focus:border-orange-500 focus:ring-orange-500 block w-full rounded-md focus:ring-1
     }
-    input:focus, textarea:focus {
-
+    textarea {
+        field-sizing: content
     }
 </style>
 

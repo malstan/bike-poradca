@@ -11,11 +11,11 @@
                 </template>
             </UiAnimatedTitle>
         
-            <div class=" flex flex-col lg:flex-row gap-3 lg:gap-8 overflow-hidden">
-                <img src="~/assets/images/person.png" alt="predávajúci" class="max-w-96 w-full mx-auto" id="profilePhoto">
+            <div class=" flex flex-col lg:flex-row justify-center gap-3 lg:gap-8 overflow-hidden">
+                <img src="~/assets/images/person.png" alt="predávajúci" class="max-w-96" id="profilePhoto">
 
                 <div class="pt-10 lg:pt-20 relative" id="quotation">
-                    <p class="text-2xl flex-1 pl-8 pt-8 relative quotation pointer-events-none">
+                    <p class="text-2xl pl-8 pt-8 relative quotation pointer-events-none max-w-3xl">
                     Ponúkam odborné telefonické poradenstvo, ktoré Vám pomôže vybrať bicykel presne podľa Vašich potrieb. Mojim cieľom je, aby ste našli ten pravý a mali z neho radosť.</p>
                 </div>
 

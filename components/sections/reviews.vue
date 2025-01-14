@@ -18,7 +18,7 @@
                 </div>
             </div>
 
-            <div class="justify-self-center mt-8">   
+            <div class="flex justify-center mt-8">   
                 <UiCallNow/>
             </div>
         </div>

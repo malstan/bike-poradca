@@ -16,7 +16,7 @@
         
             <div class="relative process-section">
                 <!-- first -->
-                <div class="flex items-center justify-between min-h-52 gap-4 relative">
+                <div class="flex items-center justify-around min-h-44 gap-4 relative">
                     <div class="w-2/5 hidden lg:block">
                         <div></div>
                     </div>
@@ -30,7 +30,7 @@
                     </div>
 
                     <div class="w-full lg:w-2/5 opacity-0 mr-10 xs:mr-0" id="step1">
-                        <div class="shadow-lg rounded-lg p-4 xs:p-8 max-w-96 bg-green-600 ">
+                        <div class="shadow-lg rounded-lg px-4 py-2 xs:px-8 xs:py-6 max-w-96 bg-green-600 ">
                             <span class="block mb-3 text-md font-bold text-orange-500">01</span>
                             <p class="text-xl xs:text-2xl text-white">Zavolajte mi.</p>
                         </div>
@@ -38,15 +38,15 @@
                 </div>
 
                 <!-- second -->
-                <div class="flex items-center justify-between min-h-52 gap-4 relative">
+                <div class="flex items-center justify-around min-h-44 gap-4 relative">
 
-                    <div class="lg:hidden absolute top-[calc(50%-4px)] flex items-center justify-center h-6 ml-[8px] w-[calc(100%-20px)]">
+                    <div class="lg:hidden absolute top-[calc(50%-4px)] flex items-center justify-center h-6 w-[calc(100%-1rem)]">
                         <div class="h-2 absolute top-0 w-full bg-gray-300"></div>
                         <div ref="line12" class="h-2 absolute left-0 top-0 w-0 bg-orange-500 duration-300"></div>
                     </div>
                     
                     <div class="w-full lg:w-2/5 justify-items-end opacity-0 ml-10 xs:ml-0" id="step2">
-                        <div class="shadow-lg rounded-lg p-4 xs:p-8 max-w-96 bg-green-600">
+                        <div class="shadow-lg rounded-lg px-4 py-2 xs:px-8 xs:py-6 max-w-96 bg-green-600">
                             <span class="block mb-3 text-md font-bold text-orange-500">02</span>
                             <p class="text-xl xs:text-2xl text-white">Povedzte mi o vašom budúcom bicykli.</p>
                         </div>
@@ -66,13 +66,13 @@
                 </div>
 
                 <!-- third -->
-                <div class="flex items-center justify-between min-h-52 gap-4 relative">
+                <div class="flex items-center justify-around min-h-44 gap-4 relative">
                     <div class="w-2/5 hidden lg:block">
                     </div>
 
                     <div class="lg:hidden absolute top-[calc(50%-4px)] flex items-center justify-center h-6  w-[calc(100%-20px)]">
-                        <div class="h-2 absolute top-0 -right-3 w-full bg-gray-300"></div>
-                        <div ref="line22" class="h-2 absolute -right-3 top-0 w-0 bg-orange-500 duration-300"></div>
+                        <div class="h-2 absolute top-0 -right-[0.15rem] w-full bg-gray-300"></div>
+                        <div ref="line22" class="h-2 absolute -right-[0.15rem] top-0 w-0 bg-orange-500 duration-300"></div>
                     </div>
 
                     <div>
@@ -84,7 +84,7 @@
                     </div>
 
                     <div class="w-full lg:w-2/5 opacity-0 mr-10 xs:mr-0" id="step3">
-                        <div class="shadow-lg rounded-lg p-4 xs:p-8 max-w-96 bg-green-600">
+                        <div class="shadow-lg rounded-lg px-4 py-2 xs:px-8 xs:py-6 max-w-96 bg-green-600">
                             <span class="block mb-3 text-md font-bold text-orange-500">03</span>
                             <p class="text-xl xs:text-2xl text-white">Poradím Vám, ktorý bicykel je pre Vás najlepší.</p>
                         </div>
@@ -92,15 +92,15 @@
                 </div>
 
                 <!-- fourth -->
-                <div class="flex items-center justify-between min-h-52 gap-4 relative">
+                <div class="flex items-center justify-around min-h-44 gap-4 relative">
                     
-                     <div class="lg:hidden absolute top-[calc(50%-4px)] flex items-center justify-center h-6 ml-[8px] w-[calc(100%-20px)]">
+                     <div class="lg:hidden absolute top-[calc(50%-4px)] flex items-center justify-center h-6 w-[calc(100%-1rem)]">
                         <div class="h-2 absolute top-0 w-full bg-gray-300"></div>
                         <div ref="line32" class="h-2 absolute left-0 top-0 w-0 bg-orange-500 duration-300"></div>
                     </div>
 
                     <div class="w-full lg:w-2/5 justify-items-end opacity-0 ml-10 xs:ml-0" id="step4">
-                        <div class="shadow-lg rounded-lg p-4 xs:p-8 max-w-96 bg-green-600">
+                        <div class="shadow-lg rounded-lg px-4 py-2 xs:px-8 xs:py-6 max-w-96 bg-green-600">
                             <span class="block mb-3 text-md font-bold text-orange-500">04</span>
                             <p class="text-xl xs:text-2xl text-white">Brázdite krajinou na vašom vysnívanom bicykli.</p>
                         </div>
