@@ -15,6 +15,21 @@ export default defineNuxtConfig({
         { property: 'og:image', content: 'https://bike-poradca.vercel.app/_nuxt/hero-image.CCGH2dlL.jpg' },
         { property: 'og:url', content: 'https://bike-poradca.vercel.app' },
       ],
+       script: [
+      {
+        src: "https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js",
+        async: false,
+        'data-name': "BMC-Widget",
+        'data-cfasync': "false",
+        'data-id': "bikeporadca",
+        'data-description': "Support me on Buy me a coffee!",
+        'data-message': "Zaplaťte mi kávu.",
+        'data-color': "#40DCA5",
+        'data-position': "Right",
+        'data-x_margin': "18",
+        'data-y_margin': "18"
+      }
+    ]
     }
   },
   compatibilityDate: '2024-11-01',
