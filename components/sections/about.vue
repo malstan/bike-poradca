@@ -12,13 +12,12 @@
             </UiAnimatedTitle>
         
             <div class=" flex flex-col lg:flex-row justify-center gap-3 lg:gap-8 overflow-hidden">
-                <div class="lg:max-w-96">
-                    <img src="~/assets/images/person.png" alt="predávajúci" class="w-full max-w-96 mx-auto" id="profilePhoto">
-                </div>
+      
 
-                <div class="pt-10 lg:pt-20 relative" id="quotation">
-                    <p class="text-2xl pl-8 pt-8 relative quotation pointer-events-none max-w-3xl">
-                    Ponúkam odborné telefonické poradenstvo, ktoré Vám pomôže vybrať bicykel presne podľa Vašich potrieb. Mojim cieľom je, aby ste našli ten pravý a mali z neho radosť.</p>
+                <div class=" relative" id="quotation">
+                    <p class="text-2xl pl-8 pt-8 relative quotation pointer-events-none max-w-4xl">
+                        Ponúkam odborné telefonické poradenstvo, ktoré Vám pomôže vybrať ten správny bicykel – <strong> či už klasický, alebo moderný elektrobicykel </strong>– presne podľa Vašich potrieb. Mojim cieľom je, aby ste našli bicykel, ktorý Vám bude dokonale vyhovovať a prinesie Vám radosť z každej jazdy.
+                    </p>
                 </div>
 
             </div> 

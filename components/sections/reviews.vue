@@ -12,9 +12,13 @@
             </UiAnimatedTitle>
 
             <div ref="reviewsRef" class="columns-1 sm:columns-2 lg:columns-3 gap-12">
-                <div v-for="(review, index) in reviews" :key="index" class="w-full border rounded-lg shadow-lg p-6 mb-12 inline-block bg-white duration-500 ease-in-out hover:scale-105">
+                <div v-for="(review, index) in reviews" :key="index" class="w-full border rounded-lg shadow-lg p-6 mb-12 inline-block bg-white duration-500 ease-in-out hover:scale-105 relative group">
                     <p class="mb-6">{{ review.text }}</p>
                     <p ref="nameRefs" class="font-bold text-lg border-b-2 border-green-500 inline pr-6" :data-name="review.name"></p>
+
+                    <div v-if="review.image" class="absolute inset-0 opacity-0 group-hover:opacity-100 duration-500 ease-in-out "> 
+                        <img :src="review.image" alt="" class="w-full h-full object-cover object-center rounded-lg">
+                    </div>
                 </div>
             </div>
 
@@ -71,7 +75,7 @@ const reviews = [
      {
         name: 'Vincko',
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, ',
-        image: null
+        image: 'img/reviews/vincko.webp'
     },
      {
         name: 'Ivan',
