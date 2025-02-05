@@ -1,5 +1,68 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  devtools: true,
+  runtimeConfig: {
+    public: {
+      cookieControl: {
+        locales: ['sk'],
+        localeTexts: {
+          sk: {
+            bannerTitle: 'Cookies',
+            bannerDescription: 'Súbory cookie používame, aby sme vám mohli zobraziť túto webovú stránku a lepšie pochopiť, ako ju používate, s cieľom zlepšiť ponúkané služby.',
+            save: 'Uložiť nastavenia',
+            accept: 'Povoliť',
+            decline: 'Odmietnuť',
+            acceptAll: 'Povoliť všetky',
+            declineAll: 'Odmietnuť všetky',
+            close: 'Zatvoriť',
+            manageCookies: 'Nastavenia',
+          }
+        },
+        cookies: {
+          necessary: [
+            {
+              name: 'Základné cookies',
+              description: 'Umožňujú správne fungovanie stránky.',
+              cookies: ['cookie_control_consent', 'cookie_control_enabled_categories']
+            }
+          ],
+          optional: [
+            {
+              name: 'Google Analytics',
+              description: 'Používame na analýzu návštevnosti webu.',
+              cookies: ['_ga', '_gid', '_gat'],
+              src: 'https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX',
+              async: true,
+              accept: true,
+              accepted: () => {
+                window.dataLayer = window.dataLayer || [];
+                function gtag() { window.dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-XXXXXXXXXX');
+                console.log('Google Analytics cookies boli povolené.');
+              },
+              declined: () => {
+                console.log('Google Analytics cookies boli odmietnuté.');
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  gtag: {
+    id: 'G-XXXXXXXXXX', 
+    initMode: 'manual',
+  },
+  site: { 
+    url: 'https://bikeporadca.sk', 
+    name: 'Poradenstvo pri kúpe bicykla' 
+  }, 
+  robots: {
+    UserAgent: '*',
+    disallow:  '*', // ["/server/"],
+    Sitemap: 'https://bikeporadca.sk/sitemap.xml'
+  },
   app: {
     head: {
       htmlAttrs: {
@@ -34,8 +97,18 @@ export default defineNuxtConfig({
   },
   compatibilityDate: '2024-11-01',
   ssr: true,
-  modules: ['@nuxtjs/tailwindcss'],
+  modules: [
+    '@nuxtjs/tailwindcss',
+    '@dargmuesli/nuxt-cookie-control',
+    '@nuxtjs/robots',
+    '@nuxtjs/sitemap',
+    '@nuxtjs/tailwindcss',
+    'nuxt-gtag'
+  ],
   plugins: [
-    { src: '~/plugins/gsap.js', ssr: false }
+    { src: '~/plugins/gsap.js', ssr: false },
+  ],
+  css: [
+    '~/assets/css/style.css',
   ]
 })

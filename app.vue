@@ -7,5 +7,7 @@
 
       <p class="text-gray-500">Copyright © Bike Poradca 2025</p>
     </div>
+
+    <CookieControl locale="sk" />
   </div>
 </template>
