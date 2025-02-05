@@ -1,0 +1,9 @@
+Order Deny,Allow
+Deny from all
+
+<Files "send_email.php">
+    SetEnvIf Referer "^https://bikeporadca.sk" allowed_referer
+    Order Deny,Allow
+    Deny from all
+    Allow from env=allowed_referer
+</Files>
