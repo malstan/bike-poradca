@@ -5,7 +5,7 @@
           <div class="bg-green-500 text-center rounded-lg">
             <span class="text-lg font-semibold">Oskenujte.</span>
             <QRCodeVue :value="phoneNumber" :size="222" class="" />
-            <span class="text-lg font-semibold">0123456789</span>
+            <span class="text-lg font-semibold">{{phoneNumber}}</span>
           </div>
         </div>
     </div>
@@ -19,7 +19,7 @@ const qrcodeContainer = ref<null | HTMLElement>(null);
 
 const canDisplayQRCode = ref<boolean>(false);
 
-const phoneNumber = "0951355464";
+const phoneNumber = "0952 395 013";
 
 onBeforeMount(() => {
      canDisplayQRCode.value = !/Mobi|Android|iPhone/i.test(navigator.userAgent)

@@ -31,14 +31,14 @@ export default defineNuxtConfig({
               name: 'Google Analytics',
               description: 'Používame na analýzu návštevnosti webu.',
               cookies: ['_ga', '_gid', '_gat'],
-              src: 'https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX',
+              src: 'https://www.googletagmanager.com/gtag/js?id=G-Z2N07XM383',
               async: true,
               accept: true,
               accepted: () => {
                 window.dataLayer = window.dataLayer || [];
                 function gtag() { window.dataLayer.push(arguments); }
                 gtag('js', new Date());
-                gtag('config', 'G-XXXXXXXXXX');
+                gtag('config', 'G-Z2N07XM383');
                 console.log('Google Analytics cookies boli povolené.');
               },
               declined: () => {
@@ -51,7 +51,7 @@ export default defineNuxtConfig({
     }
   },
   gtag: {
-    id: 'G-XXXXXXXXXX', 
+    id: 'G-Z2N07XM383', 
     initMode: 'manual',
   },
   site: { 
@@ -60,7 +60,7 @@ export default defineNuxtConfig({
   }, 
   robots: {
     UserAgent: '*',
-    disallow:  '*', // ["/server/"],
+    disallow: ["/server/"],
     Sitemap: 'https://bikeporadca.sk/sitemap.xml'
   },
   app: {

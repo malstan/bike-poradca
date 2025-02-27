@@ -9,8 +9,6 @@
     </div>
 
     <SectionsHowItWorks />
-    
-    <SectionsReviews />
 
     <SectionsContact />
   </div>

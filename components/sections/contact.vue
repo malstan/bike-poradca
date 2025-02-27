@@ -134,6 +134,8 @@ const sendEmail = async (event: SubmitEvent) => {
         } else
             error.value = 'Niekde nastala chyba, skúste to znova neskôr.'
     }
+
+    loading.value = false
 };
 
 
