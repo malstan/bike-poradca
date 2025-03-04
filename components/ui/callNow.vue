@@ -19,7 +19,7 @@ const qrcodeContainer = ref<null | HTMLElement>(null);
 
 const canDisplayQRCode = ref<boolean>(false);
 
-const phoneNumber = "0952 395 013";
+const phoneNumber = "+421 952 395 013";
 
 onBeforeMount(() => {
      canDisplayQRCode.value = !/Mobi|Android|iPhone/i.test(navigator.userAgent)

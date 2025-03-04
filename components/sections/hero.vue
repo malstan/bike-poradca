@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-hero-image h-dvh bg-cover bg-center flex items-center relative px-4 sm:px-20">
+    <div class="bg-hero-image h-dvh bg-cover bg-center flex items-center relative px-4 sm:px-20 relative">
         <div class="absolute inset-0 bg-black opacity-50"></div>
         <div class="relative container mx-auto py-10">
             <h1 class="text-3xl xs:text-4xl md:text-6xl lg:text-7xl text-white font-bold mb-4 md:mb-8 leading-tight hidden" id="title">Váš osobný poradca<br>pri kúpe bicykla!</h1>
@@ -7,6 +7,8 @@
 
             <UiCallNow id="heroBtn" class="invisible"/>
         </div>
+
+        <SectionsSocial  class="absolute top-8 right-8"/>
     </div>
 </template>
 <script setup lang="ts">
@@ -27,7 +29,7 @@ onMounted(() => {
     );
     tl.to('#subTitle', {
         duration: 2.5, 
-        text:"Zavolajte a získajte rady od odborníka."
+        text:"Zavolajte a získajte rady od odborníka bezplatne."
     });
     tl.fromTo('#heroBtn', 
         { y: 20, opacity: 0},
