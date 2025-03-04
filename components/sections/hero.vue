@@ -8,11 +8,14 @@
             <UiCallNow id="heroBtn" class="invisible"/>
         </div>
 
-        <SectionsSocial  class="absolute top-8 right-8"/>
+        <img :src="logo" alt="bikeporadca logo" class="absolute top-2 xs:top-8 left-0 xs:left-8 w-28 sm:w-40">
+
+        <SectionsSocial  class="absolute top-2 xs:top-8 right-2 xs:right-8"/>
     </div>
 </template>
 <script setup lang="ts">
 import gsap from '~/plugins/gsap';
+import logo from '~/assets/images/bikeporadca-logo-w.png'
 
 onMounted(() => {
     const tl = gsap.timeline();
