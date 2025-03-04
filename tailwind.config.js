@@ -12,7 +12,7 @@ export default {
     },
     extend: {
       backgroundImage: {
-        'hero-image': "url('/assets/images/hero-image.jpg')",
+        'hero-image': "url('/assets/images/hero-image.webp')",
       }
     },
   },

@@ -1,10 +1,10 @@
 <template>
     <div @mouseenter="showQRCode" @mouseleave="hideQRCode" class="relative inline-block">
         <a ref="btn" :href="`tel:${phoneNumber}`" class="inline-block text-lg xs:text-xl md:text-2xl bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-full ">Zavolať teraz</a>
-        <div v-if="canDisplayQRCode" class="absolute inset-0 flex items-center justify-center overflow-visible opacity-0" ref="qrcodeContainer">
+        <div v-if="canDisplayQRCode" class="absolute inset-0 -left-3 flex items-center justify-center overflow-visible opacity-0 w-[13.875rem] " ref="qrcodeContainer">
           <div class="bg-green-500 text-center rounded-lg">
             <span class="text-lg font-semibold">Oskenujte.</span>
-            <QRCodeVue :value="phoneNumber" :size="222" class="" />
+            <img :src="vcard" alt="QR" width="222" height="222" class="w-[13.875rem] h-[13.875rem]">
             <span class="text-lg font-semibold">{{phoneNumber}}</span>
           </div>
         </div>
@@ -12,7 +12,7 @@
 </template>
 <script setup lang="ts">
 import gsap from '~/plugins/gsap';
-import QRCodeVue from 'qrcode.vue'
+import vcard from '~/assets/images/qrcode.webp'
 
 const btn = ref<null | HTMLElement>(null);
 const qrcodeContainer = ref<null | HTMLElement>(null);
